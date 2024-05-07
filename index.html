@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>CoderSchool's Psychic Powers Tester</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>CoderSchool's Psychic Powers Tester</h1>
+    <p>Do you have psychic powers? If so, prove it by guessing what number I am thinking of right now. I am thinking of a number between 1 and 10.</p>
+
+    <input type="text" id="user-guess" placeholder="Enter your guess">
+    <button onclick="makeGuess()" id="make-button">Guess</button>
+    <button onclick="restartGame()" id="restart-button" style="display: none;">Play Again</button>
+    <h2> You guessed: <span id="last-guess">?</span></h2>
+    <h2 id="guess-result"></h2>
+    <h2> You have <span id="guesses-remaining">?</span> guesses remaining.</h2>
+    <h2> <span id="guess-hint"></span></h2>
+    <h2> Previous guesses: <span id="previous-guesses"></span></h2>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/*
+ Go nuts on the CSS if you'd like to make this look prettier! 
+
+ Bonus challenge (this requires advanced concepts you haven't learned yet): make "correct" be green, and "wrong" be red.
+*/
+:root {
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    text-align: center;
+    margin: 50px; /* Khoảng cách giữa các phần tử */
+  }
+  .container > * {
+    margin: 20px 0; /* Khoảng cách giữa các phần tử con */
+  }
+  .correct {
+    color: green;
+  }
+  
+  .wrong {
+    color: red;
+  }
+  h1 {
+    color: #808000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-family: cursive;
+    background-color: rgba(255, 255, 128, 0.5);
+  }
+  
+  #guess-hint {
+    color: #800080;
+  }
+  #user-guess {
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+  }
+  #make-button {
+    width: 60px;
+    height: 40px;
+    border: 2px solid #333;
+  }
+  
